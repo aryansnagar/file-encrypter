@@ -1,0 +1,133 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+.material-symbols-outlined {
+    margin: 0px 8px 0px 0px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' -25,
+  'opsz' 24
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5d5d5d;
+}
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body {
+    background-color: #ffffff;
+    width: calc(100% - 60px);
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0px;
+    width: calc(100%);
+    height: fit-content;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+header p {
+    margin: 0px 0px 0px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5d5d5d;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+footer p {
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+footer a {
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    text-decoration: none;
+    color: #5d5d5d;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+#container_one,
+#container_two {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 20px 0px 0px;
+    padding: 10px 10px;
+    border: 1px solid #bebebe;
+}
+
+#container_one p,
+#container_two p {
+    margin: 0px 10px 0px 10px;
+    font-size: 14px;
+}
+
+.container_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.container_button:hover {
+    border: 1px solid #5d5d5d;
+}
