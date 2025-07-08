@@ -1,15 +1,129 @@
 :root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1;
+    --background: #ffffff;
+    --text-primary: #010101;
+    --text-secondary: #5d5d5d;
 }
 
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+p {
+    margin: 10px 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+button {
+    padding: 8px 16px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+
+body {
+    margin: 0px auto;
+    width: calc(100% - 40px);
+    max-width: calc(940px - 40px);
+    background-color: var(--background);
+}
+
+header {
+    margin: 0px auto;
+    padding: 20px 0px;
+    width: calc(100%);
+    height: fit-content;
+}
+
+header nav {
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav div {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header nav div img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+header nav div h1 {
+    margin: 0px 0px 0px 20px;
+}
+
+#con01 {
+    padding: 20px 0px;
+    width: calc(100%);
+    height: fit-content;
+}
+
+#con03 {
+    padding: 20px 0px;
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#con03 div {
+    width: calc(50%);
+    height: fit-content;
+}
+
+#con03 div h2 {
+    margin: 0px 0px 20px 0px;
+}
+
+footer {
+    padding: 20px 0px;
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ================================== */
+
+
 .material-symbols-outlined {
-    margin: 0px 8px 0px 0px;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' -25,
-  'opsz' 24
+    margin: 0px 8px 0px 8px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' -25,
+        'opsz' 24
 }
 
 @supports (font-variation-settings: normal) {
@@ -27,57 +141,15 @@
     background-color: #5d5d5d;
 }
 
-* {
-    margin: 0px 0px;
-    padding: 0px 0px;
-}
 
-body {
-    background-color: #ffffff;
-    width: calc(100% - 60px);
-    margin: 0px auto;
-}
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 20px 0px;
-    width: calc(100%);
-    height: fit-content;
-}
-
-header img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-header p {
-    margin: 0px 0px 0px 20px;
-    width: fit-content;
-    height: fit-content;
+p {
     font-size: 18px;
-    font-weight: 600;
-    color: #5d5d5d;
+    font-weight: 400;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0px;
-    width: 100%;
-    height: fit-content;
-}
 
-footer p {
-    width: fit-content;
-    height: fit-content;
-    font-size: 14px;
-    color: #5d5d5d;
-}
+
 
 footer a {
     width: fit-content;
@@ -90,6 +162,7 @@ footer a {
 
 #container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: start;
     padding: 20px 0px;
@@ -99,12 +172,12 @@ footer a {
 
 #container_one,
 #container_two {
+    margin: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: start;
     width: fit-content;
     height: fit-content;
-    margin: 0px 20px 0px 0px;
     padding: 10px 10px;
     border: 1px solid #bebebe;
 }

@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,100,0,0" />
+    <!-- Material symbols & icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- Google font Inter & JetBrains Mono -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');</style>
     <link rel="stylesheet" href="index.css">
     <script defer src="index.js"></script>
-    <title>October File Encypter and Decrypter</title>
+    <title>File Encypter and Decrypter</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <!-- header -->
     <header>
-        <img src="logo.png" alt="logo" onclick="window.location.href='index.html'">
-        <p>October File Encypter / Decrypter</p>
+        <nav>
+            <div>
+                <img src="logo.png" alt="logo" onclick="window.location.href='index.html'">
+                <h1>File Encypter / Decrypter</h1>
+            </div>
+            <button onclick="window.open('mailto:aryannagarco@gmail.com', '_blank')">Contact<span class="material-symbols-outlined">arrow_forward</span></button>
+        </nav>
     </header>
+
+    <div id="con01">
+        <p>Encrypt and decrypt files using AES encryption algorithm.</p>
+    </div>
+
+    <div id="con03">
+        <div>
+            <h2>Process to encrypt files.</h2>
+            <p>Upload the file (Left Side).</p>
+            <p>Set the password.</p>
+            <p>Download the encrypted file.</p>
+        </div>
+        <div>
+            <h2>Process to decrypt files.</h2>
+            <p>Upload the file (Right Side).</p>
+            <p>Set the password.</p>
+            <p>Download the decrypted file.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Aryan Nagar © 2025</p>
+    </footer>
 
     <div id="container">
         <!-- file encrypter -->
         <div id="container_one">
             <p>Upload the file you want to encrypt.</p>
             <input type="file" id="fileInput" hidden>
-            <label for="fileInput" class="container_button"><span class="material-symbols-outlined">cloud_upload</span>Choose File</label>
+            <label for="fileInput" class="container_button"><span
+                    class="material-symbols-outlined">cloud_upload</span>Choose File</label>
         </div>
         <!-- file decrypter -->
         <div id="container_two">
             <p>Upload the file you want to decrypt.</p>
             <input type="file" id="decryptInput" hidden>
-            <label for="decryptInput" class="container_button"><span class="material-symbols-outlined">cloud_download</span>Choose File</label>
+            <label for="decryptInput" class="container_button"><span
+                    class="material-symbols-outlined">cloud_download</span>Choose File</label>
         </div>
     </div>
 
-    <!-- footer -->
-    <footer>
-        <p> Letoctober © 2025</p>
-        <a href="mailto:letoctober@gmail.com">Contact</a>
-    </footer>
-    
+
+
 </body>
 </html>
