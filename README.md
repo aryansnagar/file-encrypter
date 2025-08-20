@@ -1,9 +1,6 @@
 # 🔐 File Encrypter
-
 A simple, browser-based utility to encrypt and decrypt files using AES-256.  
-Deployed at: **[octoberfileencrypter.vercel.app](octoberfileencrypter.vercel.app)**.  
-
----
+Deployed at: [octoberfileencrypter.vercel.app](https://octoberfileencrypter.vercel.app/).  
 
 ## ✨ Features
 - Client-side file encryption/decryption (no server required)
@@ -12,13 +9,9 @@ Deployed at: **[octoberfileencrypter.vercel.app](octoberfileencrypter.vercel.app
 - Minimal UI; single-page app
 - Using AES-256 encyption.
 
----
-
 ## 📦 Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Hosting:** Vercel
-
----
+- Frontend: HTML, CSS, JavaScript  
+- Hosting: Vercel
 
 ## 🚀 Getting Started (Local)
 1. Clone the repo:
